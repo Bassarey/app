@@ -1,5 +1,4 @@
 FROM python:3.6-stretch
-MAINTAINER Tina Bu <tina.hongbu@gmail.com>
 
 # устанавливаем параметры сборки
 RUN apt-get update && \
