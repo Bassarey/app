@@ -1,0 +1,23 @@
+[ToPy Problem Definition File v2007]
+
+# Минимальные данные оптимизации
+
+PROB_TYPE  : comp  #Минимальная проблема соответствия
+PROB_NAME  : mbb_beam_minimal
+ETA        : 0.5 #  Or use 'exp' (without quotes)
+DOF_PN     : 2
+VOL_FRAC   : 0.5
+FILT_RAD   : 1.5
+P_FAC      : 3
+ELEM_K     : Q4
+NUM_ELEM_X : 60
+NUM_ELEM_Y : 20
+NUM_ELEM_Z : 0
+# Остановка после заданных итераций:
+NUM_ITER   : 10 #  тот же результат, что и вершина Зигмунда(60,20,0.5,3.0,1.5)
+# Выбрать при использовании критерия остановки:
+#CHG_STOP   : 0.01 # тот же результат, что и вершина Зигмунда(60,20,0.5,3.0,1.5)
+FXTR_NODE_X: 1|21 #  узлы 1 to 21, LHS домена
+FXTR_NODE_Y: 1281 #  (NUM_ELEM_X + 1) * (NUM_ELEM_Y + 1)
+LOAD_NODE_Y: 1
+LOAD_VALU_Y: -1
